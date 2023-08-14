@@ -12,3 +12,68 @@
     display: flex;
     align-items: center;
 }
+
+/* Styles for links within the header */
+a > span{
+    margin: 0 30px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    color: white;
+}
+
+/* Logo styles */
+.logo {
+    width: 150px;
+    cursor: pointer;
+}
+
+/* Navigation menu styles */
+.nav {
+    height: 40px;
+    width: 80%;
+    margin: auto;
+    padding: 20px 0px;
+    z-index: 10;
+    position: relative;
+}
+
+/* Navigation header styles */
+.nav > .nav-header {
+    display: inline;
+}
+
+.nav > .nav-header > .nav-title {
+    display: inline-block;
+    font-size: 22px;
+    color: #fff;
+    padding: 10px 10px 10px 10px;
+}
+
+/* Navigation button styles */
+.nav > .nav-btn {
+    display: none;
+}
+
+/* Navigation links styles */
+.nav > .nav-links {
+    display: inline;
+    float: right;
+    font-size: 18px;
+}
+
+.nav > .nav-links > a {
+    display: inline-block;
+    padding: 13px 10px 13px 10px;
+    text-decoration: none;
+    color: #efefef;
+}
+
+/* Navigation link hover effect */
+.nav > .nav-links > a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* Navigation check input (for responsive menu) */
+.nav > #nav-check {
+    display: none;
+}
