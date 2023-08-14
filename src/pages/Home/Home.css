@@ -39,3 +39,9 @@
     margin-bottom: 0.4rem; /* Add margin at the bottom */
     text-align: left; /* Align text to the left */
 }
+
+/* Styles for the movie runtime */
+.movie__runtime {
+    font-size: 2rem; /* Set font size */
+    margin-bottom: 18px; /* Add margin at the bottom */
+}
