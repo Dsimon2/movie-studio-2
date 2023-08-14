@@ -27,3 +27,12 @@ const Home = () => {
                     showIndicators={false}
                     showThumbs={false}
                     autoPlay={true}
+
+                    >
+                    {/* Map through the Movies array and render movie backdrops */}
+                    {Movies.map(movie => (
+                        <Link style={{ textDecoration: "none", color: "white" }} to={`/movie/${movie.id}`}>
+                            {/* Movie backdrop image */}
+                            <div className="movie">
+                                <img src={`https://image.tmdb.org/t/p/original${movie && movie.backdrop_path}`} />
+                            </div>
