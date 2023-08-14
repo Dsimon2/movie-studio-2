@@ -35,3 +35,26 @@ const Header = () => {
           <span></span>
         </label>
       </div>
+
+       {/* Navigation links */}
+       <div class="nav-links">
+        {/* Link to "Popular" movies category */}
+        <Link to="/movies/popular" style={{ textDecoration: "none" }}>
+          <span>Popular</span>
+        </Link>
+
+        {/* Link to "Top Rated" movies category */}
+        <Link to="/movies/top_rated" style={{ textDecoration: "none" }}>
+          <span>Top Rated</span>
+        </Link>
+
+        {/* Link to "Upcoming" movies category */}
+        <Link to="/movies/upcoming" style={{ textDecoration: "none" }}>
+          <span>Upcoming</span>
+        </Link>
+      </div>
+    </div>
+  );
+};
+
+export default Header;
