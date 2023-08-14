@@ -2,3 +2,11 @@
 .movie {
     height: 600px; /* Set the height of the movie container */
 }
+
+/* Styles for the movie poster image */
+.movie > img {
+    margin: auto; /* Center the image horizontally */
+    display: block; /* Make the image a block element */
+    width: 100%; /* Set the image width to 100% */
+    height: 100vh; /* Set the image height to 100% of the viewport height */
+}
