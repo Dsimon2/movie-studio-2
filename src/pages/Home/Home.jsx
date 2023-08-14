@@ -15,3 +15,15 @@ const Home = () => {
             .then(res => res.json())
             .then(data => setMovies(data.results));
     }, []);
+
+    return (
+        <>
+            <div className="movie">
+                {/* Carousel to display popular movie backdrops */}
+                <Carousel
+                    transitionTime={4}
+                    infiniteLoop={true}
+                    showStatus={false}
+                    showIndicators={false}
+                    showThumbs={false}
+                    autoPlay={true}
