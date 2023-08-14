@@ -8,3 +8,6 @@ const Header = () => {
 
     // Function to handle the click event and toggle the menu
   const handleClick = () => setClick(!click);
+
+  // Function to close the menu when a link is clicked
+  const Close = () => setClick(false);
