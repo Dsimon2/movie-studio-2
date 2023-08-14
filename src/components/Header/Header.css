@@ -77,3 +77,59 @@ a > span{
 .nav > #nav-check {
     display: none;
 }
+
+/* Media query for screens with a max width of 800px */
+@media (max-width: 800px) {
+    /* Show navigation button on smaller screens */
+    .nav > .nav-btn {
+        display: inline-block;
+        position: absolute;
+        right: 0px;
+        top: 20px;
+    }
+    
+    /* Styling for the navigation button icon */
+    .nav > .nav-btn > label {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        padding: 13px;
+    }
+    
+    .nav > .nav-btn > label > span {
+        display: block;
+        width: 25px;
+        height: 10px;
+        border-top: 2px solid #eee;
+    }
+    
+    /* Styles for the navigation links dropdown */
+    .nav > .nav-links {
+        position: absolute;
+        display: block;
+        width: 100%;
+        background-color: #333;
+        height: 0px;
+        transition: all 0.3s ease-in;
+        overflow-y: hidden;
+        top: 50px;
+        left: 0px;
+    }
+    
+    .nav > .nav-links > a {
+        display: block;
+        width: 100%;
+    }
+    
+    /* Toggle the visibility of the navigation links dropdown */
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+        height: 0px;
+    }
+    
+    /* Show the navigation links dropdown when the checkbox is checked */
+    .nav > #nav-check:checked ~ .nav-links {
+        height: calc(35vh - 51px);
+        overflow-y: auto;
+        margin-top: 25px;
+    }
+}
