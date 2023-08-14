@@ -1,0 +1,14 @@
+/* Header styles */
+.header {
+    margin: 1rem 2.5rem;
+    padding: .5rem 0;
+    align-items: center;
+    display: flex;
+    justify-content:space-between;
+}
+
+/* Styles for the header menu */
+.headerMenu {
+    display: flex;
+    align-items: center;
+}
