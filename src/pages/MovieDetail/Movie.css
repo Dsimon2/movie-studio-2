@@ -1,0 +1,171 @@
+/* Styles for the movie container */
+.movie {
+    width: 100%; /* Set the width to 100% */
+    position: relative; /* Position the movie container relatively */
+    display: flex; /* Display movie container as a flex container */
+    flex-direction: column; /* Arrange items vertically */
+    align-items: center; /* Align items at the center */
+}
+
+/* Styles for the movie intro section */
+.movie__intro {
+    width: 100%; /* Set the width to 100% */
+}
+
+/* Styles for the movie backdrop image */
+.movie__backdrop {
+    width: 73%; /* Set the width of the backdrop */
+    height: 500px; /* Set the height of the backdrop */
+    object-fit: cover; /* Scale the image to cover its container */
+    object-position: 10% 50%; /* Set the position within the container */
+    margin: auto; /* Center the image horizontally */
+    display: flex; /* Display the backdrop image as a flex item */
+}
+
+/* Styles for the movie detail section */
+.movie__detail {
+    align-items: center; /* Align items at the center */
+    width: 75%; /* Set the width of the movie detail section */
+    display: flex; /* Display movie detail section as a flex container */
+}
+
+/* Media query for screens with a max width of 800px */
+@media (max-width: 800px) {
+    /* Adjust movie detail styles for smaller screens */
+    .movie__detail {
+        align-items: center; /* Align items at the center */
+        width: 90%; /* Set the width of the movie detail section */
+        display: flex; /* Display movie detail section as a flex container */
+    }
+}
+
+/* Styles for the left side of movie details */
+.movie__detailLeft {
+    margin-right: 30px; /* Add margin to the right side */
+}
+
+/* Styles for the movie poster image */
+.movie__poster {
+    width: 300px; /* Set the width of the movie poster */
+    border-radius: 10px; /* Add border-radius for rounded corners */
+    box-shadow: rgba(0, 0, 0, 0.86) 0px 22px 40px 6px; /* Add box shadow */
+}
+
+/* Styles for the right side of movie details */
+.movie__detailRight {
+    color: white; /* Set text color */
+    display: flex; /* Display as a flex container */
+    flex-direction: column; /* Arrange items vertically */
+    height: 450px; /* Set the height of the right side */
+    justify-content: space-between; /* Space items evenly */
+}
+
+/* Styles for the top part of the right side */
+.movie__detailRightTop > div {
+    text-shadow: 0px 0px 5px #000000; /* Add text shadow */
+    margin-bottom: 0.5rem; /* Add margin at the bottom */
+}
+
+/* Styles for the movie name */
+.movie__name {
+    font-weight: 600; /* Set font weight */
+    font-size: 2.5rem; /* Set font size */
+}
+
+/* Styles for the vote count */
+.movie__voteCount {
+    margin-left: 1rem; /* Add margin on the left */
+}
+
+/* Styles for the genres section */
+.movie__genres {
+    margin: 1.25rem 0; /* Add margin on the top and bottom */
+}
+
+/* Styles for individual genres */
+.movie__genre {
+    padding: 0.5rem 2rem; /* Add padding around the genre */
+    border: 2px solid blueviolet; /* Add border with color */
+    border-radius: 5px; /* Add border-radius for rounded corners */
+    margin-right: 1rem; /* Add margin on the right */
+}
+
+/* Media query for screens with a max width of 800px */
+@media (max-width: 800px) {
+    /* Adjust genre styles for smaller screens */
+    .movie__genre {
+        display: flex; /* Display genres as a flex container */
+    }
+}
+
+/* Styles for the bottom part of the right side */
+.movie__detailRightBottom {
+    margin: 2rem 0; /* Add margin on the top and bottom */
+    flex: 0.8; /* Set flex value */
+}
+
+/* Styles for summary text */
+.summaryText {
+    font-size: 1.5rem; /* Set font size */
+    margin-bottom: 1.25rem; /* Add margin at the bottom */
+    font-weight: 600; /* Set font weight */
+    display: flex; /* Display as a flex container */
+    position: relative; /* Set position as relative */
+    align-items: center; /* Align items at the center */
+}
+
+/* Styles for the last div in summary text */
+.summaryText > div:last-of-type {
+    margin-left: auto; /* Move the last div to the right */
+}
+
+/* Styles for the movie links section */
+.movie__links {
+    position: relative; /* Set position as relative */
+    display: flex; /* Display links as a flex container */
+    justify-content: space-between; /* Space items evenly */
+}
+
+/* Media query for screens with a max width of 800px */
+@media screen and (max-width: 800px) {
+    /* Adjust movie links styles for smaller screens */
+    .movie__links {
+        position: relative; /* Set position as relative */
+        flex-direction: column; /* Arrange items vertically */
+        display: flex; /* Display links as a flex container */
+        justify-content: space-between; /* Space items evenly */
+    }
+}
+
+/* Styles for the movie heading */
+.movie__heading {
+    font-size: 2.2rem; /* Set font size */
+}
+
+/* Styles for movie buttons */
+.movie__Button {
+    display: flex; /* Display as a flex container */
+    justify-content: center; /* Align items at the center */
+    align-items: center; /* Align items at the center */
+    padding: 0.8rem 2rem; /* Add padding around the button */
+    border-radius: 20px; /* Add border-radius for rounded corners */
+    cursor: pointer; /* Add pointer cursor on hover */
+    width: 150px; /* Set button width */
+    color: black; /* Set text color */
+    font-weight: bold; /* Set font weight */
+}
+
+/* Styles for the home button */
+.movie__homeButton {
+    background-color: rgb(75, 242, 24); /* Set background color */
+}
+
+/* Styles for the IMDb button */
+.movie__imdbButton {
+    background-color: #f3ce13; /* Set background color */
+}
+
+/* Styles for new tab icon */
+.newTab {
+    margin-left: 1.4rem; /* Add margin on the left */
+}
