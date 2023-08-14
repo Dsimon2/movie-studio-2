@@ -26,3 +26,16 @@
     flex-direction: column; /* Arrange items vertically */
     width: 100%; /* Set the overlay width to 100% */
 }
+
+/* Hover effect for the overlay */
+.overlay:hover {
+    opacity: 1; /* Change opacity on hover */
+}
+
+/* Styles for the movie title */
+.movie__title {
+    font-weight: 900; /* Set font weight */
+    font-size: 4rem; /* Set font size */
+    margin-bottom: 0.4rem; /* Add margin at the bottom */
+    text-align: left; /* Align text to the left */
+}
