@@ -46,3 +46,18 @@ const Home = () => {
                                     {movie ? movie.release_date : ""}
                                     {/* Additional movie information can be added here */}
                                 </div>
+
+                                 {/* Movie description */}
+                                 <div className="movie__description">{movie ? movie.overview : ""}</div>
+                            </div>
+                        </Link>
+                    ))}
+                </Carousel>
+                {/* Display the MovieList component */}
+                <MovieList />
+            </div>
+        </>
+    );
+}
+
+export default Home;
