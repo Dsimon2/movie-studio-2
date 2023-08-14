@@ -8,3 +8,9 @@
     font-size: 1.75rem; /* Set font size for the movie title */
     margin: 2.5rem 0; /* Add margin to the top and bottom of the movie title */
 }
+
+/* Styles for the movie boxes */
+.movie__box {
+    display: flex; /* Display movie boxes as a flex container */
+    flex-wrap: wrap; /* Allow movie boxes to wrap to the next row */
+}
