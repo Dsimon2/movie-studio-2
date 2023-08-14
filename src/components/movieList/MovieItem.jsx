@@ -26,3 +26,23 @@ const getMovies = () => {
         .then(res => res.json())
         .then(data => setMovieList(data.results));
 };
+
+return (
+    <>
+        {/* Movie list section */}
+        <div className="movie__list">
+            {/* Display the movie list title */}
+            <h3 className="movie__title">{type ? type : "Top Rated"}</h3>
+            {/* Container for movie cards */}
+            <div className="movie__box">
+                {/* Map through the movieList array and render Cards components */}
+                {movieList.map(movie => (
+                    <Cards movie={movie} key={movie.id} /> // Adding a unique key for each movie
+                ))}
+            </div>
+        </div>
+    </>
+);
+};
+
+export default MovieList;
