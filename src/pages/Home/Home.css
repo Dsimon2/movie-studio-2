@@ -45,3 +45,12 @@
     font-size: 2rem; /* Set font size */
     margin-bottom: 18px; /* Add margin at the bottom */
 }
+
+/* Styles for the movie description */
+.movie__description {
+    font-size: 18px; /* Set font size */
+    margin-bottom: 0.25rem; /* Add margin at the bottom */
+    display: flex; /* Display as a flex container */
+    text-align: left; /* Align text to the left */
+    width: 50%; /* Set width to 50% of the container */
+}
