@@ -1,0 +1,10 @@
+/* Styles for the movie list section */
+.movie__list {
+    padding: 0 3rem 3rem 3rem; /* Add padding to the movie list section */
+}
+
+/* Styles for the movie title */
+.movie__title {
+    font-size: 1.75rem; /* Set font size for the movie title */
+    margin: 2.5rem 0; /* Add margin to the top and bottom of the movie title */
+}
