@@ -36,3 +36,13 @@ const Home = () => {
                             <div className="movie">
                                 <img src={`https://image.tmdb.org/t/p/original${movie && movie.backdrop_path}`} />
                             </div>
+
+                             {/* Movie details overlay */}
+                             <div className="overlay">
+                                {/* Movie title */}
+                                <div className="movie__title">{movie ? movie.original_title : ""}</div>
+                                {/* Movie runtime and other information */}
+                                <div className="movie__runtime">
+                                    {movie ? movie.release_date : ""}
+                                    {/* Additional movie information can be added here */}
+                                </div>
