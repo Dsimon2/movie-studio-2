@@ -14,3 +14,24 @@
     display: flex; /* Display movie boxes as a flex container */
     flex-wrap: wrap; /* Allow movie boxes to wrap to the next row */
 }
+
+/* Media query for screens with a max width of 800px */
+@media (max-width: 800px) {
+    /* Adjust movie box layout for smaller screens */
+    .movie__box {
+        display: flex; /* Display movie boxes as a flex container */
+        flex-wrap: wrap; /* Allow movie boxes to wrap to the next row */
+        justify-content: center; /* Center-align movie boxes */
+    }
+    
+    /* Adjust padding for the movie list section on smaller screens */
+    .movie__list {
+        padding: 0 0rem 3rem 0rem; /* Adjust padding for the movie list section */
+    }
+    
+    /* Adjust font size and margin for the movie title on smaller screens */
+    .movie__title {
+        font-size: 1.75rem; /* Set font size for the movie title */
+        margin: 2.5rem 24px; /* Add margin to the top and bottom of the movie title */
+    }
+}
